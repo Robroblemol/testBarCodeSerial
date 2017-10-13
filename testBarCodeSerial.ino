@@ -23,8 +23,10 @@ void loop() {
   if(p==barlength){
      Serial.println (barToString(arrayCad));
      Serial.println ("dia: "+barToString(arrayCad).substring(7,10));
+     long arrayLong [barlength];
+     
      //Serial.print ("dia long: ");
-    // Serial.println (getDayBar(arrayCad));
+     Serial.println (getDayBar(arrayCad));
      memset(arrayCad, 0,sizeof(arrayCad));
      p=0; 
   }
